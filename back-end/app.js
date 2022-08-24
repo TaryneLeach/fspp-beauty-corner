@@ -16,5 +16,5 @@ app.get('/', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-	res.status(404).send('Took a wrong turn!');
+	res.status(404).send('Wrong beauty aisle!!');
 });
