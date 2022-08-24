@@ -1,0 +1,19 @@
+{
+  "name": "fspp-beauty-corner",
+  "version": "1.0.0",
+  "description": "Welcome To The Beauty Corner!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaryneLeach/fspp-beauty-corner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaryneLeach/fspp-beauty-corner/issues"
+  },
+  "homepage": "https://github.com/TaryneLeach/fspp-beauty-corner#readme"
+}
