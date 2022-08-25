@@ -8,5 +8,5 @@ const PORT = process.env.PORT;
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log(`Smelling fine on ${PORT} !!`);
+  console.log(`Smelling fine on port ${PORT} !!`);
 });
