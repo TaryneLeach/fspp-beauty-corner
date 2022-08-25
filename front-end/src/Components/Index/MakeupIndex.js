@@ -5,7 +5,7 @@ import axios from 'axios'
 const API = process.env.REACT_APP_API_URL;
 
 const MakeupIndex = () => {
-const [makeups, setMakeups] = useState()
+const [makeups, setMakeups] = useState([])
 
 useEffect(() => {
     axios.get(`${API}/makeups`)
@@ -31,4 +31,4 @@ return (
 
 }
 
-export default MakeupIndex
+export default MakeupIndex;

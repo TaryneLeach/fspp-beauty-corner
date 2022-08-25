@@ -1,4 +1,4 @@
-function PerfumeCards({ makeup }) {
+function PerfumeCards({ perfume }) {
     <section>
         <img src={perfume.image} alt={perfume.item_name} />
         <article>

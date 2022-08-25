@@ -1,5 +1,10 @@
 nav {
     background-color: rgb(202, 169, 233);
     color: rgb(84, 40, 124);
+   
+}
+
+.nav-links {
+    align-items: center;
     justify-content: space-evenly;
 }
