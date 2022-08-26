@@ -1,10 +1,45 @@
-nav {
-    background-color: rgb(202, 169, 233);
-    color: rgb(84, 40, 124);
-   
-}
-
-.nav-links {
+.nav {
+    background-color: rgb(196, 121, 196);
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 1em;
+   
+  }
+   
+
+
+.links {
+    color: rgb(133, 43, 133);
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: x-large;
+    font-family: Brush Script MT;
+}
+
+/* below this line is CSS for homepage */
+
+section {
+   text-align: center;
+}
+h1 {
+    color: rgb(133, 43, 133);
+    font-family: Brush Script MT;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(133, 43, 133);
+    font-family: Brush Script MT;
+    font-size: medium 
+}
+img {
+  
+    max-width: 400px;
+    max-height: 450px;
 }

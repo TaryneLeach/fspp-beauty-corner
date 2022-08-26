@@ -3,11 +3,16 @@ import './NavBar.css';
 const NavBar = () => {
 
     return (
-        <nav>
-        <Link className="nav-links" to="/">Home</Link>
-        <Link className="nav-links"to="/makeups">Makeup</Link>
-        <Link className="nav-links"to='/perfumes'>Perfume</Link>
-
+        <nav className="nav">
+        
+        <h2>The Beauty Corner</h2>
+      &nbsp;
+        <Link className="links" to="/">Home</Link>
+        &nbsp;
+        <Link className="links"to="/makeups">Makeup</Link>
+        &nbsp;
+        <Link className="links"to='/perfumes'>Perfume</Link>
+      
         </nav>
     )
 }

@@ -1,0 +1,15 @@
+.makeup-img {
+    max-width: 150px;
+    max-height: 1500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.perfume-img {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

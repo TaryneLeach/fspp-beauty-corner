@@ -1,6 +1,5 @@
-
 import { Routes, Route } from 'react-router-dom'
-import Home from './Components/Home.js'
+import Home from './Components/NavBar/Home.js'
 import NavBar from './Components/NavBar/NavBar.js'
 import MakeupIndex from './Pages/Index/IndexMakeup.js'
 import PerfumeIndex from './Pages/Index/IndexPerfume.js'
