@@ -45,9 +45,9 @@ INSERT INTO perfume (item_name, brand, scent_type, key_notes, fragrance_descript
 ('Princess Eau de Parfum', 'Kilian Paris', 'Warm & Sweet Gourmands', 'n/a', 'Ginger, Green Tea, Marshmallow',120.00, false, 'https://www.sephora.com/productimages/sku/s2576072-main-zoom.jpg'),
 
 
-('Love Dont Be Shy', 'Kilian Paris', 'Warm Florals', 'This fragrance implores you at the opening with tender orange blossom absolute. Juicy honeysuckle and plush rose are softly caressed by the sweetness of luscious marshmallow sugar accord, satisfying the craving pang of new love. A warm amber base lends a touch of sensuality.', 'Orange blossom, Vanilla Absolute, Luscious Marshmallow', 265.00, true, 'https://m.bykilian.com/media/images/products/833x968/kl_sku_N3E601_833x968_4.jpg');
+('Love Dont Be Shy', 'Kilian Paris', 'Warm Florals', 'This fragrance implores you at the opening with tender orange blossom absolute. Juicy honeysuckle and plush rose are softly caressed by the sweetness of luscious marshmallow sugar accord, satisfying the craving pang of new love. A warm amber base lends a touch of sensuality.', 'Orange blossom, Vanilla Absolute, Luscious Marshmallow', 265.00, true, 'https://m.bykilian.com/media/images/products/833x968/kl_sku_N3E601_833x968_4.jpg'),
 
 
--- ()
+('Ani', 'Nishane', 'Spicy Woody Vanilla', 'Launched in 2019 by the design house of Nishane, this composition opens with top notes from Green notes, Bergamot, Pink Pepper and Ginger. The enticing heart features notes from Turkish Rose, Cardamom and Black Currant. The fragrance draws to a close with seductive hints from Sandalwood, Benzoin, Cedar, Ambergris, Musk and Patchouli.', 'Bergamot, Green notes, Blue Ginger, Pink Pepper',235.00, true, 'https://media.neimanmarcus.com/f_auto,q_auto:low,ar_4:5,c_fill,dpr_2.0,w_790/01/nm_4181748_100000_b');
 -- ()
 -- ()

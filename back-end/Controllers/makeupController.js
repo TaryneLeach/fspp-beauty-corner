@@ -13,7 +13,10 @@ const {
 makeups.get('/', async (req, res) => {
 	const allMakeup = await getAllMakeup();
 	if (allMakeup) {
-		res.json(allMakeup);
+		res.status(200).json({
+			success: true,
+			payload: allMakeup,
+		});
 	} else {
 		res.status(404).send('Makeup items could not be found!');
 	}
@@ -24,7 +27,10 @@ makeups.get('/:id', async (req, res) => {
 	const { id } = req.params;
 	const oneMakeup = await getOneMakeup(id);
 	if (oneMakeup.id) {
-		res.json(oneMakeup);
+		res.status(200).json({
+			success: true,
+			payload: oneMakeup,
+		});
 	} else {
 		res.status(400).send('Makeup item could not be found!');
 	}
@@ -35,9 +41,9 @@ makeups.delete('/:id', async (req, res) => {
 	const { id } = req.params;
 	const deleting = await deleteMakeup(id);
 	if (deleting.id) {
-		res.json(deleteMakeup);
+		res.status(200).json({ success: true, payload: deleting });
 	} else {
-		res.status(404).send('Makeup deletion has failed!');
+		res.status(404).json({ success: false, payload: { id: undefined } });
 	}
 });
 
@@ -46,8 +52,9 @@ makeups.post('/new', async (red, res) => {
 	const { body } = req.body;
 	const creating = await createMakeup(body);
 	if (creating.id) {
-		res.json({
-			makeup: {
+		res.status(200).json({
+			success: true,
+			payload: {
 				id: creating.id,
 				item_name: creating.item_name,
 				brand: creating.brand,
