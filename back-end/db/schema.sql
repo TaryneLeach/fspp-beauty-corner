@@ -16,7 +16,7 @@ CREATE TABLE makeup(
 );
 
 
-
+DROP TABLE IF EXISTS perfume;
 CREATE TABLE perfume(
     id          SERIAL PRIMARY KEY,
     item_name   TEXT NOT NULL,
