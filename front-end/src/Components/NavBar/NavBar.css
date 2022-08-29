@@ -27,10 +27,18 @@ section {
    text-align: center;
 }
 h1 {
+    
     color: rgb(133, 43, 133);
     font-family: Brush Script MT;
     font-size: xx-large;
     text-align: center;
+    width: 400px;
+    height: 100px;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {font-size: 40px;}
 }
 
 h2 {

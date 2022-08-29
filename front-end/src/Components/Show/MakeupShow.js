@@ -8,13 +8,13 @@ const API = process.env.REACT_APP_API_URL;
 const MakeupShow = () => {
     const navigate = useNavigate();
     const { id } = useParams();
-    const [makeup, setMakeup] = useState()
+    const [makeup, setMakeup] = useState([])
 
 	useEffect(() => {
 		axios
 			.get(`${API}/makeups/${id}`)
 			.then((res) => {
-				setMakeup(res.data);
+				setMakeup(res.data.payload);
 			})
 			.catch((error) => {
 				console.warn(error);

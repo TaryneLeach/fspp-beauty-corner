@@ -13,3 +13,22 @@
     margin-left: auto;
     margin-right: auto;
 }
+.makeup-list-img {
+    max-width: 150px;
+    max-height: 150px;
+
+}
+.perfume-list-img {
+  
+    max-width: 150px;
+    max-height: 150px;
+
+}  
+
+ul {
+    font-family: Brush Script MT;
+    font-size: large;
+    list-style: none;
+    display:grid;
+    grid-column: span 3;
+}

@@ -24,8 +24,11 @@ const PerfumeIndex = () => {
 	return (
 		<div>
 			<h1>Perfume Selection</h1>
-            <img className="perfume-img"src="https://i.pinimg.com/originals/8b/db/dd/8bdbdd6568058358a81d6a52b65e52b5.jpg" alt="" />
-			{perfumes.length > 0
+          
+            
+        <img className="perfume-img"src="https://i.pinimg.com/originals/8b/db/dd/8bdbdd6568058358a81d6a52b65e52b5.jpg" alt="" />
+			<br></br>
+            {perfumes.length > 0
 				? perfumes.map((perfume, index) => {
 						return <PerfumeCards key={index} perfume={perfume} />;
 				  })

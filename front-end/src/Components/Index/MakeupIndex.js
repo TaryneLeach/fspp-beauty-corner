@@ -12,6 +12,7 @@ const MakeupIndex = () => {
 		axios
 			.get(`${API}/makeups`)
 			.then((res) => {
+                // console.log(res.data.payload)
 				setMakeups(res.data.payload);
 			})
 			.catch((error) => {
@@ -22,15 +23,13 @@ const MakeupIndex = () => {
 	return (
 		<div>
 			<h1>Makeup Selection </h1>
-			<br></br>
 			<img
 				className='makeup-img'
 				src='https://img.freepik.com/premium-vector/beautiful-black-woman-applying-pink-lipstick_85666-54.jpg?w=2000'
-				alt=''
-			/>
-
+				alt=''/>
 			{makeups.length > 0
 				? makeups.map((makeup, index) => {
+                   
 						return <MakeupCards key={index} makeup={makeup} />;
 				  })
 				: null}

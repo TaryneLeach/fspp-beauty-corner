@@ -1,17 +1,24 @@
 import React from 'react'
+import './MakeupandPerfume.css'
 
 function PerfumeCards({ perfume }) {
+
+    return (
     <section>
-        <img src={perfume.image} alt={perfume.item_name} />
-        <article>
-        <div>{perfume.brand}</div>
-        <div>{perfume.scent_type}</div>
-        <div>{perfume.fragrance_description}</div>
-        <div>{perfume.key_notes}</div>
-        <div>{perfume.price}</div>
-        <div>{perfume.is_long_lasting}</div>
-        </article>
+        <ul>
+        <li>
+        <img className="perfume-list-img" src={perfume.image} alt=""
+         />
+     
+        <p>{perfume.item_name}</p>
+        <p>{perfume.brand}</p>
+        <p> {perfume.scent_type}</p>
+       <p>${perfume.price}</p>
+       
+        </li>
+       </ul>
     </section>
+    )
     }
     
     export default PerfumeCards;

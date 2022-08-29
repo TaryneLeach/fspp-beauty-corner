@@ -8,13 +8,13 @@ const API = process.env.REACT_APP_API_URL;
 const PerfumeShow = () => {
     const navigate = useNavigate();
     const { id } = useParams();
-    const [perfume, setPerfume] = useState()
+    const [perfume, setPerfume] = useState([])
 
 	useEffect(() => {
 		axios
 			.get(`${API}/perfumes/${id}`)
 			.then((res) => {
-				setPerfume(res.data);
+				setPerfume(res.data.payload);
 			})
 			.catch((error) => {
 				console.warn(error);

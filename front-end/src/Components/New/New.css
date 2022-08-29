@@ -1,0 +1,11 @@
+ form {
+    font-family: Brush Script MT;
+    color: rgb(133, 43, 133);
+}
+
+button {
+    font-family: Brush Script MT;
+    color: rgb(133, 43, 133);
+    background-color: rgb(196, 121, 196);
+    width: 15%;
+}

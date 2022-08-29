@@ -19,14 +19,14 @@ const PerfumeEdit = () => {
 	});
 
 	const editPerfume = (event) => {
-		setPerfume({ ...snack, [event.target.id]: event.target.value });
+		setPerfume({ ...perfume, [event.target.id]: event.target.value });
 	};
 
 	useEffect(() => {
 		axios
 			.get(`${API}/perfumes/${id}`)
 			.then((res) => {
-				setSnack(res.data);
+				setPerfume(res.data);
 			})
 			.catch();
 	}, [id]);
@@ -54,6 +54,7 @@ const PerfumeEdit = () => {
 	return (
 		<section>
 			<form onSubmit={handleSubmit}>
+                <div>
 				<label htmlFor='name'>Item Name</label>
 				<input
 					id='name'
@@ -61,6 +62,8 @@ const PerfumeEdit = () => {
 					value={perfume.item_name}
 					onChange={editPerfume}
 				/>
+                </div>
+                <div>
 				<label htmlFor='brand'>Brand</label>
 				<input
 					id='brand'
@@ -68,6 +71,7 @@ const PerfumeEdit = () => {
 					value={perfume.brand}
 					onChange={editPerfume}
 				/>
+                </div>
 				<label htmlFor='scent-notes'>Scent Notes</label>
 				<input
 					id='scent-notes'
@@ -100,6 +104,7 @@ const PerfumeEdit = () => {
             <input 
             type="image"
             name="image"
+            alt="perfume"
             value={perfume.image}
             onChange={editPerfume}
             />

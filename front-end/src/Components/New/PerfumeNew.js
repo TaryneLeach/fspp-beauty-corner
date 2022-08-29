@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
+import './New.css'
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -19,21 +20,12 @@ const PerfumeNew = () => {
 	});
 
 	const newPerfume = (event) => {
-		setPerfume({ ...snack, [event.target.id]: event.target.value });
+		setPerfume({ ...perfume, [event.target.id]: event.target.value });
 	};
-
-	useEffect(() => {
-		axios
-			.get(`${API}/perfumes/${id}`)
-			.then((res) => {
-				setSnack(res.data);
-			})
-			.catch();
-	}, [id]);
 
 	const handleNew = (perfume) => {
 		axios
-			.put(`${API}/perfumes`, perfume)
+			.post(`${API}/perfumes`, perfume)
 			.then(() => {
 				navigate(`/perfumes`);
 			})
@@ -48,71 +40,88 @@ const PerfumeNew = () => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		handleEdit(perfume, id);
+		handleNew(perfume, id);
 	};
 
 	return (
 		<section>
+            <h1>Add a perfume!</h1>
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='name'>Item Name</label>
+                <br></br>
 				<input
 					id='name'
 					type='text'
 					value={perfume.item_name}
 					onChange={newPerfume}
 				/>
+                <br></br>
 				<label htmlFor='brand'>Brand</label>
+                <br></br>
 				<input
 					id='brand'
 					type='text'
 					value={perfume.brand}
 					onChange={newPerfume}
 				/>
+                <br></br>
 				<label htmlFor='scent-notes'>Scent Notes</label>
+                <br></br>
 				<input
 					id='scent-notes'
 					type='text'
 					value={perfume.scent_notes}
 					onChange={newPerfume}
 				/>
+                <br></br>
 				<label htmlFor='fragrance-description'>Fragrance Description</label>
+                <br></br>
 				<input
 					id='fragrance-description'
 					type='text'
 					value={perfume.fragrance_description}
 					onChange={newPerfume}
 				/>
+                <br></br>
 				<label htmlFor='key-notes'>Key Notes</label>
+                <br></br>
 				<input
 					id='key-notes'
 					type='text'
 					value={perfume.key_notes}
 					onChange={newPerfume}
 				/>
+                <br></br>
 				<label htmlFor='price'>Price</label>
+                <br></br>
 				<input
 					id='price'
 					type='number'
 					value={perfume.price}
 					onChange={newPerfume}
 				/>
-
+                <br></br>
 				<label htmlFor='image'>Image</label>
+                <br></br>
 				<input
-					type='image'
+					type='text'
 					name='image'
 					value={perfume.image}
 					onChange={newPerfume}
 				/>
-				<label htmlFor='long-lasting'>Long Lasting</label>
+                <br></br>
+                <br></br>
+				<label htmlFor='long-lasting'>Is this perfume long lasting?</label>
+                <br></br>
 				<input
 					type='checkbox'
 					name='long-lasting'
 					onClick={checkBox}
 					id='long-lasting'
 				/>
+                <br></br>
 				<Link to='/perfumes'>
-					<button type='submit'>Submit Perfume</button>
+					<button type='submit'>Submit New Perfume</button>
 				</Link>
 			</form>
 		</section>
