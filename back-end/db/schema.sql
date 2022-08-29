@@ -4,6 +4,7 @@ CREATE DATABASE beauty;
 
 \c beauty; 
 
+DROP TABLE IF EXISTS makeup;
 CREATE TABLE makeup(
     id          SERIAL PRIMARY KEY,
     item_name   TEXT NOT NULL,
