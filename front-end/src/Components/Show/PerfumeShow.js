@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios'
 import Reviews from './Reviews';
 import './MakeupandPerfumeShow.css'
-import React from 'react'
+import React from 'react';
 
 
 const API = process.env.REACT_APP_API_URL;

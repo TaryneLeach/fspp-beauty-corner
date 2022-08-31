@@ -4,7 +4,7 @@ import React from 'react'
 const Reviews = () => {
     const [ reviewForm, setReviewForm] = useState({
         review: '',
-        reviewer: '',    })
+        reviewer: '',   })
 
 
         const submitForm = (event) => {
@@ -20,7 +20,6 @@ const Reviews = () => {
         return (
             <div>
               
-    
                 <form onSubmit={submitForm}>
                 <label htmlFor="name">Name:</label>
                 <input 

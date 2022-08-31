@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import './New.css'
-import React from 'react'
+import React from 'react';
 const API = process.env.REACT_APP_API_URL;
 
 const MakeupNew = () => {
