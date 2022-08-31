@@ -11,7 +11,7 @@ const UserFavorites = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        setUserBeauty(event)
+        setUserBeauty(userBeauty)
         alert(`Form submitted!`);
         
        event.target.reset()

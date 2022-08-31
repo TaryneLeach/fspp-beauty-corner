@@ -8,7 +8,7 @@ const Reviews = () => {
 
         const submitForm = (event) => {
             event.preventDefault();
-            setReviewForm(event.target.value)
+            setReviewForm(reviewForm)
             alert(`Form submitted!`);
     
             event.target.reset()
