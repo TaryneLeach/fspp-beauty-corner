@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import React from 'react'
 import Home from './Components/NavBar/Home.js'
 import NavBar from './Components/NavBar/NavBar.js'
 import MakeupIndex from './Pages/Index/IndexMakeup.js'

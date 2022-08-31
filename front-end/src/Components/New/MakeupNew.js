@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import './New.css'
+import React from 'react'
 const API = process.env.REACT_APP_API_URL;
 
 const MakeupNew = () => {
@@ -45,6 +46,9 @@ const MakeupNew = () => {
     return (
         <section>
             <h1>Add some makeup!</h1>
+            <img src="https://thetempest.co/wp-content/uploads/2019/07/standard-1.jpg" alt="" />
+            <br></br>
+            <br></br>
             <form  onSubmit={handleSubmit}>
             <label htmlFor="name">Item Name</label>
             <br></br>

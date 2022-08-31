@@ -1,4 +1,5 @@
 import PerfumeEdit from "../../Components/Edit/PerfumeEdit"
+import React from 'react'
 
 const EditPerfume = () => {
     return (

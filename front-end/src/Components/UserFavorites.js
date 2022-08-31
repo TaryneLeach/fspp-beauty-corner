@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import React from 'react'
+
 const UserFavorites = () => {
 
     const [userBeauty, setUserBeauty] = useState({
@@ -23,7 +25,7 @@ const UserFavorites = () => {
             <section>
               <h1>Your Favorites</h1>
               <br></br>
-                <img src="https://www.byrdie.com/thmb/xwUA98uG7d1jZ7ZMfGKvZ3sS5ko=/700x394/smart/filters:no_upscale()/ScreenShot2020-08-17at2.41.15PM-ef2c92974c3748d0b91b59710e6a1183.jpg" alt="" />
+                <img className="your-favorite-img"src="https://www.byrdie.com/thmb/xwUA98uG7d1jZ7ZMfGKvZ3sS5ko=/700x394/smart/filters:no_upscale()/ScreenShot2020-08-17at2.41.15PM-ef2c92974c3748d0b91b59710e6a1183.jpg" alt="" />
                 <br></br>
                 <br></br>
                 <h2>

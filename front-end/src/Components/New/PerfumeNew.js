@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
+import React from 'react'
 import './New.css'
 
 const API = process.env.REACT_APP_API_URL;
@@ -46,6 +47,9 @@ const PerfumeNew = () => {
 	return (
 		<section>
             <h1>Add a perfume!</h1>
+            <img className="new-perfume"src="https://p1-tt.byteimg.com/origin/pgc-image/de5f2c153d1b4c5bbc35ae0e9dbe2367" alt=""/>
+            <br></br>
+            <br></br>
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='name'>Item Name</label>
                 <br></br>

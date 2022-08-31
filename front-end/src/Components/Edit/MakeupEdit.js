@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import React from 'react'
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -25,7 +26,7 @@ const MakeupEdit = () => {
 		axios
 			.get(`${API}/makeups/${id}`)
 			.then((res) => {
-				setMakeup(res.data);
+				setMakeup(res.data.payload);
 			})
 			.catch();
 	}, [id]);
@@ -51,6 +52,10 @@ const MakeupEdit = () => {
 
 	return (
 		<section>
+            <h1>Edit a Makeup Item</h1>
+            <img src="https://cdn.cliqueinc.com/posts/296442/cute-makeup-looks-296442-1638735967246-main.700x0c.jpg" alt="" />
+            <br></br>
+            <br></br>
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='name'>Item Name</label>
 				<input
@@ -59,6 +64,8 @@ const MakeupEdit = () => {
 					value={makeup.item_name}
 					onChange={editMakeup}
 				/>
+                <br></br>
+                <br></br>
 				<label htmlFor='brand'>Brand</label>
 				<input
 					id='brand'
@@ -66,6 +73,8 @@ const MakeupEdit = () => {
 					value={makeup.brand}
 					onChange={editMakeup}
 				/>
+                <br></br>
+                <br></br>
 				<label htmlFor='category'>Category</label>
 				<input
 					id='category'
@@ -73,6 +82,8 @@ const MakeupEdit = () => {
 					value={makeup.category}
 					onChange={editMakeup}
 				/>
+                <br></br>
+                <br></br>
 				<label htmlFor='price'>Price</label>
 				<input
 					id='price'
@@ -80,14 +91,19 @@ const MakeupEdit = () => {
 					value={makeup.price}
 					onChange={editMakeup}
 				/>
-				<label htmlFor='image'>Image</label>
+                <br></br>
+                <br></br>
+				<label htmlFor='image'>Image</label> 
+              
 				<input
-					type='image'
+					type='text'
 					name='image'
-                    alt={makeup.name}
+                    alt="makeup"
 					value={makeup.image}
 					onChange={editMakeup}
 				/>
+                <br></br>
+                <br></br>
 				<label htmlFor='is_vegan'>Vegan</label>
 				<input
 					type='checkbox'

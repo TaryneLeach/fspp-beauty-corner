@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import React from 'react'
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -26,7 +27,7 @@ const PerfumeEdit = () => {
 		axios
 			.get(`${API}/perfumes/${id}`)
 			.then((res) => {
-				setPerfume(res.data);
+				setPerfume(res.data.payload);
 			})
 			.catch();
 	}, [id]);
@@ -53,8 +54,12 @@ const PerfumeEdit = () => {
 
 	return (
 		<section>
+            <h1>Edit a Perfume</h1>
+            <img src="https://c.tenor.com/6LDZD67I13IAAAAC/spray-ariana-grande.gif" alt="" />
+            <br></br>
+            <br></br>
 			<form onSubmit={handleSubmit}>
-                <div>
+            
 				<label htmlFor='name'>Item Name</label>
 				<input
 					id='name'
@@ -62,8 +67,9 @@ const PerfumeEdit = () => {
 					value={perfume.item_name}
 					onChange={editPerfume}
 				/>
-                </div>
-                <div>
+                
+                <br></br>
+                <br></br>
 				<label htmlFor='brand'>Brand</label>
 				<input
 					id='brand'
@@ -71,7 +77,8 @@ const PerfumeEdit = () => {
 					value={perfume.brand}
 					onChange={editPerfume}
 				/>
-                </div>
+                <br></br>
+                <br></br>
 				<label htmlFor='scent-notes'>Scent Notes</label>
 				<input
 					id='scent-notes'
@@ -79,6 +86,8 @@ const PerfumeEdit = () => {
 					value={perfume.scent_notes}
 					onChange={editPerfume}
 				/>
+                <br></br>
+                <br></br>
 				<label htmlFor='fragrance-description'>Fragrance Description</label>
 				<input
 					id='fragrance-description'
@@ -86,6 +95,8 @@ const PerfumeEdit = () => {
 					value={perfume.fragrance_description}
 					onChange={editPerfume}
 				/>
+                <br></br>
+                <br></br>
                 <label htmlFor="key-notes">Key Notes</label>
                 <input 
                 id="key-notes"
@@ -93,6 +104,8 @@ const PerfumeEdit = () => {
                 value={perfume.key_notes}
                 onChange={editPerfume}
                 />
+                <br></br>
+                <br></br>
                 <label htmlFor="price">Price</label>
                 <input 
                 id="price"
@@ -100,14 +113,18 @@ const PerfumeEdit = () => {
                 value={perfume.price}
                 onChange={editPerfume}
                 />
+                <br></br>
+                <br></br>
                 <label htmlFor="image">Image</label>
             <input 
-            type="image"
+            type="text"
             name="image"
             alt="perfume"
             value={perfume.image}
             onChange={editPerfume}
             />
+            <br></br>
+                <br></br>
                 <label htmlFor="long-lasting">Long Lasting</label>
                 <input type='checkbox' name='long-lasting' onClick={checkBox} id='long-lasting' />
                 <Link to="/perfumes">

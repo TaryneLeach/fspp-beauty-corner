@@ -1,4 +1,5 @@
 import PerfumeNew from "../../Components/New/PerfumeNew"
+import React from 'react'
 
 
 const NewPerfume = () => {

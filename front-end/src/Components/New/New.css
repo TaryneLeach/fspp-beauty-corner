@@ -9,3 +9,8 @@ button {
     background-color: rgb(196, 121, 196);
     width: 15%;
 }
+
+.new-perfume {
+    max-width: 300px;
+    max-height: 300px;
+}

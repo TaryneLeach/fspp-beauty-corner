@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import MakeupCards from './MakeupCards.js';
 import axios from 'axios';
 import './MakeupandPerfume.css';
+import React from 'react'
 
 const API = process.env.REACT_APP_API_URL;
 

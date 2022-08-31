@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 import Reviews from './Reviews';
+import React from 'react'
 
 
 const API = process.env.REACT_APP_API_URL;
