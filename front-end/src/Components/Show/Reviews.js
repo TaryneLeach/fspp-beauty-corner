@@ -1,20 +1,25 @@
+import { useState } from 'react'
 
-const Reviews = ({ comments }) => {
-  
-    const submitForm = (event) => {
-        event.preventDefault();
-        const reviewer = event.target.reviewer.value;
-        const review = event.target.review.value;
+const Reviews = () => {
+    const [ reviewForm, setReviewForm] = useState({
+        review: '',
+        reviewer: '',    })
 
-        if(reviewer && review) {
-            comments.push({reviewer: reviewer, review: review})
-            alert('Thank you for your product review!')
-        } else {
-            alert('Please fill out the form entirely to submit a product review!')
+
+        const submitForm = (event) => {
+            event.preventDefault();
+            setReviewForm(event.target.value)
+            alert(`Form submitted!`);
+    
+            event.target.reset()
+           
         }
-    }
+
+      
         return (
             <div>
+              
+    
                 <form onSubmit={submitForm}>
                 <label htmlFor="name">Name:</label>
                 <input 
@@ -30,7 +35,8 @@ const Reviews = ({ comments }) => {
                 />
                 <br></br>
                 <br></br>
-                <button onClick="">Submit your product review!</button>
+                
+                <button type="submit">Submit your product review!</button>
                 </form>
             </div>
         )

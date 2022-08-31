@@ -13,12 +13,13 @@ function PerfumeCards({ perfume }) {
         <img className="perfume-list-img" src={perfume.image} alt=""
          /> 
          </li>
-     
+         <Link to={`/perfumes/${perfume.id}`}>
         <li>{perfume.item_name}</li>
+        </Link>
         <li>{perfume.brand}</li>
         <li> {perfume.scent_type}</li>
-       <li>${perfume.price}</li>
-       <Link to={`/perfumes/${perfume.id}`}>Additional Product Details</Link>
+        <li>${perfume.price}</li>
+
        </article>
        </div>
        </ul>

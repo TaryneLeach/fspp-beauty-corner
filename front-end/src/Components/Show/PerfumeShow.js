@@ -45,7 +45,7 @@ const PerfumeShow = () => {
                 <div>{perfume.scent_notes}</div>
                 <div>{perfume.fragrance_description}</div>
                 <div>{perfume.key_notes}</div>
-                <div>{perfume.price}</div>
+                <div>${perfume.price}</div>
                 <div>{perfume.is_long_lasting}
                 
                 {perfume.is_long_lasting ? (

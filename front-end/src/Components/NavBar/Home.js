@@ -1,5 +1,6 @@
 import './NavBar.css';
 
+
 const Home = () => {
     return (
         <section>

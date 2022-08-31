@@ -25,14 +25,20 @@
 
 }  
 
+
+
+
 ul{
+    
+   
+    align-items: center;
     margin: 38%;
-    margin-bottom: auto;
-    padding: 2px;
+    padding: 6px;
     background-color: white;
     border: 3px solid rgb(133, 43, 133);
     font-family: Brush Script MT;
     font-size: large;
-    list-style: none;
+    list-style: none; 
+    
 }
 

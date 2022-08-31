@@ -43,7 +43,7 @@ const MakeupShow = () => {
                 <img src={makeup.image} alt={makeup.item_name} />
                 <div>{makeup.brand}</div>
                 <div>{makeup.category}</div>
-                <div>$ {makeup.price}</div>
+                <div>${makeup.price}</div>
                 <div>
                 {makeup.is_vegan ? (
 			  <h4><img className="vegan"src="https://t4.ftcdn.net/jpg/02/99/88/93/360_F_299889394_1prIwRtf6ndCfZegWOEeJRPKc56dTHFK.jpg" alt=""></img></h4>

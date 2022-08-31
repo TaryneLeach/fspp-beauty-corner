@@ -13,6 +13,18 @@
     
 }
 
+.vegan {
+    max-width: 105px;
+    max-height: 105px;
+}
+
+.not-vegan {
+    max-width: 105px;
+    max-height: 105px;
+}
+
 article {
     font-family: Brush Script MT;
+    /* display:grid;
+    grid-auto-flow: row; */
 }

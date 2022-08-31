@@ -12,8 +12,8 @@ const NavBar = () => {
         <Link className="links"to="/makeups">Makeup</Link>
         &nbsp;
         <Link className="links"to='/perfumes'>Perfume</Link>
-      {/* &nbsp;
-      <Link className="links" to="/userfavorites">User Favorites</Link> */}
+      &nbsp;
+      <Link className="links" to="/userfavorites">Your Favorites</Link>
         </nav>
     )
 }

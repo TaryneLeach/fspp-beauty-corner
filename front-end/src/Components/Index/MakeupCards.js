@@ -10,12 +10,13 @@ function MakeupCards({ makeup }) {
 <article>
 
     <img className="makeup-list-img"src={makeup.image} alt="" />
- 
+    <Link to={`/makeups/${makeup.id}`}>
     <li>{makeup.item_name}</li>
+    </Link>
     <li>{makeup.brand}</li>
     <li>{makeup.category}</li>
     <li>${makeup.price}</li>
-   <Link to={`/makeups/${makeup.id}`}>Additional Product Details</Link>
+ 
     </article>
     </div>
     </ul>
