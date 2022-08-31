@@ -1,18 +1,23 @@
 import React from 'react'
+import './MakeupandPerfume.css'
+import { Link } from 'react-router-dom'
 
 function MakeupCards({ makeup }) {
     return (
-<section>
+<section> 
 <ul>
-    <li>
+<div>
+<article>
+
     <img className="makeup-list-img"src={makeup.image} alt="" />
-   
-    <p>{makeup.item_name}</p>
-    <p>{makeup.brand}</p>
-    <p>{makeup.category}</p>
-    <p>${makeup.price}</p>
-    <p>{makeup.is_vegan}</p>
-    </li>
+ 
+    <li>{makeup.item_name}</li>
+    <li>{makeup.brand}</li>
+    <li>{makeup.category}</li>
+    <li>${makeup.price}</li>
+   <Link to={`/makeups/${makeup.id}`}>Additional Product Details</Link>
+    </article>
+    </div>
     </ul>
    
 

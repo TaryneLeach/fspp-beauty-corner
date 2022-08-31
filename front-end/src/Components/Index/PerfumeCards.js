@@ -1,21 +1,26 @@
 import React from 'react'
 import './MakeupandPerfume.css'
+import { Link } from 'react-router-dom'
 
 function PerfumeCards({ perfume }) {
 
     return (
     <section>
         <ul>
+            <div>
+        <article>
         <li>
         <img className="perfume-list-img" src={perfume.image} alt=""
-         />
+         /> 
+         </li>
      
-        <p>{perfume.item_name}</p>
-        <p>{perfume.brand}</p>
-        <p> {perfume.scent_type}</p>
-       <p>${perfume.price}</p>
-       
-        </li>
+        <li>{perfume.item_name}</li>
+        <li>{perfume.brand}</li>
+        <li> {perfume.scent_type}</li>
+       <li>${perfume.price}</li>
+       <Link to={`/perfumes/${perfume.id}`}>Additional Product Details</Link>
+       </article>
+       </div>
        </ul>
     </section>
     )
