@@ -7,7 +7,7 @@ function PerfumeCards({ perfume }) {
     return (
     <section>
         <ul>
-            <div>
+            <div className="product-div">
         <article>
         <li>
         <img className="perfume-list-img" src={perfume.image} alt=""

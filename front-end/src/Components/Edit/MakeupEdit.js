@@ -54,8 +54,11 @@ const MakeupEdit = () => {
 		<section>
             <h1>Edit a Makeup Item</h1>
             <img src="https://cdn.cliqueinc.com/posts/296442/cute-makeup-looks-296442-1638735967246-main.700x0c.jpg" alt="" />
+            
+			<br></br>
+		
             <br></br>
-            <br></br>
+			
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='name'>Item Name</label>
 				<input
@@ -111,6 +114,7 @@ const MakeupEdit = () => {
 					onClick={checkBox}
 					id='is-vegan'
 				/>
+				<br></br>
 				<Link to='/makeups'>
 					<button type='submit'>Submit Makeup Edit</button>
 				</Link>

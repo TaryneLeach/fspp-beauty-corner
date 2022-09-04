@@ -1,8 +1,9 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 import Reviews from './Reviews';
 import React from 'react';
+
 
 
 const API = process.env.REACT_APP_API_URL;
@@ -52,6 +53,7 @@ const MakeupShow = () => {
 			  <h4> <img className="not-vegan"src="https://thecrumbyvegan.files.wordpress.com/2019/12/notvegananymore.jpg?w=660" alt="" /> </h4>
 			)}
                 </div>
+				<Link to={`/makeups/${makeup.id}/edit`}>Edit Item</Link>
                 <h5>Have you tried this makeup item? Leave a review below!</h5>
                 <Reviews />
                 <br></br>

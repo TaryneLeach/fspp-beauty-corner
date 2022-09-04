@@ -6,7 +6,7 @@ function MakeupCards({ makeup }) {
     return (
 <section> 
 <ul>
-<div>
+<div className="product-div">
 <article>
 
     <img className="makeup-list-img"src={makeup.image} alt="" />

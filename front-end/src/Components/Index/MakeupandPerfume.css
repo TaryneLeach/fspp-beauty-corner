@@ -25,19 +25,21 @@
 
 }  
 
+.product-div {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+}
 
-
-ul{
-    
-   
-    align-items: center;
+ul{ 
     margin: 38%;
-    padding: 6px;
+    padding: 2%;
     background-color: white;
     border: 3px solid rgb(133, 43, 133);
     font-family: Brush Script MT;
     font-size: large;
     list-style: none; 
+    align-items: center;
     
 }
 

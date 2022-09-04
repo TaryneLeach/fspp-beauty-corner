@@ -46,7 +46,7 @@ const MakeupNew = () => {
     return (
         <section>
             <h1>Add some makeup!</h1>
-            <img src="https://thetempest.co/wp-content/uploads/2019/07/standard-1.jpg" alt="" />
+            <img src="https://s2.r29static.com/bin/entry/0e3/0,0,2000,1050/x,80/1716506/image.jpg" alt="" />
             <br></br>
             <br></br>
             <form  onSubmit={handleSubmit}>

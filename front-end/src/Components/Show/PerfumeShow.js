@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate , Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 import Reviews from './Reviews';
@@ -42,6 +42,7 @@ const PerfumeShow = () => {
             <h1>Additonal Perfume Details</h1>
             <article>
                 <img className="perfume-show-img" src={perfume.image} alt={perfume.item_name} />
+    
                 <div>{perfume.brand}</div>
                 <div>{perfume.scent_notes}</div>
                 <div>{perfume.fragrance_description}</div>
@@ -55,6 +56,7 @@ const PerfumeShow = () => {
 			  <h4><img className="short-term" src="https://thumbs.dreamstime.com/b/short-term-rubber-stamp-grunge-design-dust-scratches-effects-can-be-easily-removed-clean-crisp-look-color-easily-83571228.jpg" alt=""/></h4>
 			)}
                 </div>
+                <Link to={`/perfumes/${perfume.id}/edit`}>Edit Item</Link>
                 <h5>Have you tried this perfume? Leave a review below!</h5>
                 <Reviews />
                 <br></br>
