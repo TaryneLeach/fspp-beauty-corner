@@ -4,26 +4,25 @@ import { Link } from 'react-router-dom'
 
 function MakeupCards({ makeup }) {
     return (
-<section> 
-<ul>
-<div className="product-div">
-<article>
 
-    <img className="makeup-list-img"src={makeup.image} alt="" />
-    <Link to={`/makeups/${makeup.id}`}>
-    <li>{makeup.item_name}</li>
-    </Link>
-    <li>{makeup.brand}</li>
-    <li>{makeup.category}</li>
-    <li>${makeup.price}</li>
+<body>
+<div className="main-div">
+
+
+    <p className="img-div"><img className="makeup-list-img"src={makeup.image} alt="" /></p>
+    <p className="link-div"><Link to={`/makeups/${makeup.id}`}>{makeup.item_name}</Link></p>
+    <p className="brand-div">{makeup.brand}</p>
+    <p className="category-div">{makeup.category}</p>
+    <p className="price-div">${makeup.price}</p>
  
-    </article>
+    
     </div>
-    </ul>
+    </body>
+  
    
 
     
-</section>
+
     )
 }
 

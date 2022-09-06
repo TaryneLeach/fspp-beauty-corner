@@ -25,21 +25,43 @@
 
 }  
 
-.product-div {
+
+.body {
     display: flex;
-    flex-direction: row;
-    flex-basis: auto;
+    flex-wrap: wrap;
 }
 
-ul{ 
-    margin: 38%;
-    padding: 2%;
-    background-color: white;
-    border: 3px solid rgb(133, 43, 133);
-    font-family: Brush Script MT;
-    font-size: large;
-    list-style: none; 
-    align-items: center;
-    
+.main-div {
+   
+    margin: 35rem 35rem 35rem 35rem;
+    padding: 2rem;
+    width: 250 px;
+    box-shadow: 0 0 28px 4px rgb(196, 121, 196);
+    transition: transform .3s ease;
+    cursor: pointer; 
+   
 }
+
+.main-div:hover {
+    transform: scale(1.1);
+
+}
+
+.link-div, .brand-div, .category-div {
+    font-family: Brush Script MT;
+    font-size: x-large;
+    color: rgb(133, 43, 133);
+}
+
+.price-div, .scent-div {
+    font-family: Brush Script MT;
+    font-size: x-large;
+    color: rgb(133, 43, 133);
+
+}
+
+
+
+
+
 

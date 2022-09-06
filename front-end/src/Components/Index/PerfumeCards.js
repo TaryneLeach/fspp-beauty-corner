@@ -5,25 +5,18 @@ import { Link } from 'react-router-dom'
 function PerfumeCards({ perfume }) {
 
     return (
-    <section>
-        <ul>
-            <div className="product-div">
-        <article>
-        <li>
-        <img className="perfume-list-img" src={perfume.image} alt=""
-         /> 
-         </li>
-         <Link to={`/perfumes/${perfume.id}`}>
-        <li>{perfume.item_name}</li>
-        </Link>
-        <li>{perfume.brand}</li>
-        <li> {perfume.scent_type}</li>
-        <li>${perfume.price}</li>
-
-       </article>
-       </div>
-       </ul>
-    </section>
+<body>
+ <div className="main-div">
+        <p><img className="perfume-list-img" src={perfume.image} alt="" /></p> 
+         
+        
+        <p className="link-div"> <Link to={`/perfumes/${perfume.id}`}>{perfume.item_name} </Link></p>
+      
+        <p className="brand-div">{perfume.brand}</p>
+        <p className="scent-div"> {perfume.scent_type}</p>
+        <p className="price-div">${perfume.price}</p>
+        </div>
+        </body>
     )
     }
     

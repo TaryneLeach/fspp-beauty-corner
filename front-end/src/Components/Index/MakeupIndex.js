@@ -29,12 +29,15 @@ const MakeupIndex = () => {
 				className='makeup-img'
 				src='https://img.freepik.com/premium-vector/beautiful-black-woman-applying-pink-lipstick_85666-54.jpg?w=2000'
 				alt=''/>
+				<div>
 			{makeups.length > 0
 				? makeups.map((makeup, index) => {
                    
 						return <MakeupCards key={index} makeup={makeup} />;
 				  })
+				  
 				: null}
+				</div>
 		</div>
 	);
 };
