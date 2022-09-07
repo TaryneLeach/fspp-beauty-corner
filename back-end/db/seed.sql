@@ -17,7 +17,11 @@ INSERT INTO makeup (item_name, brand, category, price, is_vegan, image) VALUES
 
 ('Nightmoth Lip Pencil', 'MAC Cosmetics', 'Lipliner', 21.00, false, 'https://sdcdn.io/mac/us/mac_sku_M38058_1x1_0.png?width=1080&height=1080'),
 
-('Vino Lip Pencil', 'MAC Cosmetics', 'Lipliner', 21.00, false, 'https://sdcdn.io/mac/us/mac_sku_S4W924_1x1_0.png?width=1080&height=1080');
+('Vino Lip Pencil', 'MAC Cosmetics', 'Lipliner', 21.00, false, 'https://sdcdn.io/mac/us/mac_sku_S4W924_1x1_0.png?width=1080&height=1080'),
+
+('Killawatt Freestyle Highlighter', 'Fenty Beauty', 'Highlighter', 38.00, false, 'https://cdn.mysnapp.co.uk/images/original/59f99b16a9001.jpg'),
+
+('The Wahala 2 Palette', 'Juvias Place', 'Eyeshadow', 36.00, false, 'http://cdn.shopify.com/s/files/1/0529/4800/9113/products/20210507_024127_1200x1200.jpg?v=1620963353');
 
 
 
@@ -48,6 +52,7 @@ INSERT INTO perfume (item_name, brand, scent_type, key_notes, fragrance_descript
 ('Love Dont Be Shy', 'Kilian Paris', 'Warm Florals', 'This fragrance implores you at the opening with tender orange blossom absolute. Juicy honeysuckle and plush rose are softly caressed by the sweetness of luscious marshmallow sugar accord, satisfying the craving pang of new love. A warm amber base lends a touch of sensuality.', 'Orange blossom, Vanilla Absolute, Luscious Marshmallow', 265.00, true, 'https://m.bykilian.com/media/images/products/833x968/kl_sku_N3E601_833x968_4.jpg'),
 
 
-('Ani', 'Nishane', 'Spicy Woody Vanilla', 'Launched in 2019 by the design house of Nishane, this composition opens with top notes from Green notes, Bergamot, Pink Pepper and Ginger. The enticing heart features notes from Turkish Rose, Cardamom and Black Currant. The fragrance draws to a close with seductive hints from Sandalwood, Benzoin, Cedar, Ambergris, Musk and Patchouli.', 'Bergamot, Green notes, Blue Ginger, Pink Pepper',235.00, true, 'https://media.neimanmarcus.com/f_auto,q_auto:low,ar_4:5,c_fill,dpr_2.0,w_790/01/nm_4181748_100000_b');
--- ()
--- ()
+('Ani', 'Nishane', 'Spicy Woody Vanilla', 'Launched in 2019 by the design house of Nishane, this composition opens with top notes from Green notes, Bergamot, Pink Pepper and Ginger. The enticing heart features notes from Turkish Rose, Cardamom and Black Currant. The fragrance draws to a close with seductive hints from Sandalwood, Benzoin, Cedar, Ambergris, Musk and Patchouli.', 'Bergamot, Green notes, Blue Ginger, Pink Pepper',235.00, true, 'https://media.neimanmarcus.com/f_auto,q_auto:low,ar_4:5,c_fill,dpr_2.0,w_790/01/nm_4181748_100000_b'),
+
+
+('Night in Canners', 'Oakcha', 'Refreshing Lavender', 'Cannes always inspired the best in you and the spirit of the people made you want to stay one night more. City lights twinkle over the dark sky, and the refreshing smells of lavender, mint and cherry seep into your skin as the evening goes by. As you walk through the streets, the palm trees release hints of bergamot and praline and you know this will be a night in Cannes to remember.', 'Lavender, Mint and Bergamot', 39.95, true, 'https://cdn.shopify.com/s/files/1/0246/7666/3358/products/NIGHT-2_1000x.png?v=1660352784');
