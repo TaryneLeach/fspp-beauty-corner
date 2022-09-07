@@ -14,31 +14,31 @@
     margin-right: auto;
 }
 .makeup-list-img {
+    align-items: center;
     max-width: 150px;
     max-height: 150px;
 
 }
 .perfume-list-img {
-  
+    align-items: center;
     max-width: 150px;
     max-height: 150px;
 
 }  
 
 
-.body {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .main-div {
-   
     margin: 35rem 35rem 35rem 35rem;
     padding: 2rem;
-    width: 250 px;
+    text-align: center;
     box-shadow: 0 0 28px 4px rgb(196, 121, 196);
     transition: transform .3s ease;
     cursor: pointer; 
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 3;
    
 }
 
@@ -62,6 +62,17 @@
 
 
 
+.card-button {
+    background-color:rgb(196, 121, 196); 
+    color: rgb(133, 43, 133);
+    font-family: Brush Script MT;
+    width: 45%;
+    font-size: large;
+}
 
 
-
+.name {
+    color: rgb(133, 43, 133);
+    font-family: Brush Script MT;
+    font-size: x-large; 
+}

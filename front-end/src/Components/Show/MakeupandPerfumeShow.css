@@ -25,6 +25,14 @@
 
 article {
     font-family: Brush Script MT;
+    text-align: center;
   
 }
 
+.show-buttons {
+background-color: rgb(196, 121, 196); 
+font-family: Brush Script MT;
+color: rgb(133, 43, 133);
+font-size: x-large;
+
+}

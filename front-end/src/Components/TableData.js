@@ -1,4 +1,4 @@
-import UserFavorites from './UserFavorites';
+import UserFavorites from './New/UserFavorites';
 import React from 'react'
 import { useState } from 'react'
 

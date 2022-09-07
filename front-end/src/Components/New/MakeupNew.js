@@ -17,6 +17,7 @@ const MakeupNew = () => {
 		price: 0,
 		is_vegan: false,
 		image: '',
+        where_to_purchase: ''
 	});
 
     const newMakeup = (event) => {
@@ -26,7 +27,7 @@ const MakeupNew = () => {
 
 	const handleNew = (makeup) => {
 		axios
-			.post(`${API}/makeups`, makeup)
+			.post(`${API}/makeups/new`, makeup)
 			.then(() => {
 				navigate(`/makeups`);
 			})
@@ -46,7 +47,7 @@ const MakeupNew = () => {
     return (
         <section>
             <h1>Add some makeup!</h1>
-            <img src="https://s2.r29static.com/bin/entry/0e3/0,0,2000,1050/x,80/1716506/image.jpg" alt="" />
+            <img className="new-makeup-img"src="https://s2.r29static.com/bin/entry/0e3/0,0,2000,1050/x,80/1716506/image.jpg" alt="" />
             <br></br>
             <br></br>
             <form  onSubmit={handleSubmit}>
@@ -97,6 +98,17 @@ const MakeupNew = () => {
             />
             <br></br>
             <br></br>
+            <label htmlFor='where_to_purchase'>Where To Purchase?</label>
+            <br></br>
+            <input 
+            type="text"
+            name="purchase"
+            value={makeup.where_to_purchase}
+            id="purchase"
+            onChange={newMakeup}
+            />
+            <br></br>
+            <br></br>
             <label htmlFor='is_vegan'>Is this makeup vegan?</label>
             <br></br>
 			<input
@@ -110,7 +122,7 @@ const MakeupNew = () => {
         
           <br></br>
             <Link to='/makeups'>
-					<button type='submit'>Submit New Makeup Item </button>
+					<button className="new-button" type='submit'>Submit New Makeup Item </button>
 				</Link>
                 </form>
         </section>

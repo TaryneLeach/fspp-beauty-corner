@@ -6,15 +6,18 @@ const NavBar = () => {
     return (
         <nav className="nav">
         
-        <h2>The Beauty Corner</h2>
-      &nbsp;
-        <Link className="links" to="/">Home</Link>
+     
+        <a  className="a-tag"href="/"> <h2>The Beauty Corner</h2></a>
         &nbsp;
         <Link className="links"to="/makeups">Makeup</Link>
         &nbsp;
         <Link className="links"to='/perfumes'>Perfume</Link>
       &nbsp;
       <Link className="links" to="/userfavorites">Your Favorites</Link>
+      &nbsp;
+      <Link className="links"to="/makeups/new">New Makeup</Link>
+      &nbsp;
+      <Link className="links"to="/perfumes/new">New Perfume</Link>
         </nav>
     )
 }

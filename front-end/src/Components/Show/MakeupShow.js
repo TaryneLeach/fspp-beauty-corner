@@ -53,11 +53,19 @@ const MakeupShow = () => {
 			  <h4> <img className="not-vegan"src="https://thecrumbyvegan.files.wordpress.com/2019/12/notvegananymore.jpg?w=660" alt="" /> </h4>
 			)}
                 </div>
-				<Link to={`/makeups/${makeup.id}/edit`}>Edit Item</Link>
+		
+				<Link to="/makeups"><button className="show-buttons">Back</button></Link>
+				&nbsp;  &nbsp;
+				<a href={makeup.where_to_purchase}><button className="show-buttons">Purchase</button></a>
+				&nbsp;  &nbsp;
+				<Link to={`/makeups/${makeup.id}/edit`}><button className="show-buttons">Edit</button></Link>
+				&nbsp;  &nbsp;
+				<button className="show-buttons"onClick={deleteMakeup}>Delete makeup item</button>
+				&nbsp;  &nbsp;
                 <h5>Have you tried this makeup item? Leave a review below!</h5>
                 <Reviews />
                 <br></br>
-                <button onClick={deleteMakeup}>Delete makeup item</button>
+				
             </article>
 
         </section>

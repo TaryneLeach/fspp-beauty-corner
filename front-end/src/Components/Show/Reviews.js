@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import React from 'react'
+import './MakeupandPerfumeShow.css'
 
 const Reviews = () => {
     const [ reviewForm, setReviewForm] = useState({
@@ -36,7 +37,7 @@ const Reviews = () => {
                 <br></br>
                 <br></br>
                 
-                <button type="submit">Submit your product review!</button>
+                <button className="show-buttons"type="submit">Submit your product review!</button>
                 </form>
             </div>
         )

@@ -10,7 +10,10 @@
     margin-bottom: 1em;
    
   }
-   
+
+.a-tag {
+    text-decoration: none;
+}
 
 
 .links {
@@ -19,14 +22,14 @@
     justify-content: space-evenly;
     font-size: x-large;
     font-family: Brush Script MT;
+    text-decoration: none;
 }
 
 /* below this line is CSS for homepage */
 
-section {
-   text-align: center;
-}
-h1 {
+
+
+h1 , header{
     
     color: rgb(133, 43, 133);
     font-family: Brush Script MT;
@@ -46,8 +49,8 @@ h2 {
     font-family: Brush Script MT;
     font-size: medium 
 }
-img {
+.home-imgs {
   
-    max-width: 400px;
-    max-height: 450px;
+    max-width: 350px;
+    max-height: 350px;
 }

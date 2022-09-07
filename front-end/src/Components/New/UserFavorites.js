@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import React from 'react'
-
+import './New.css'
 const UserFavorites = () => {
 
     const [userBeauty, setUserBeauty] = useState({

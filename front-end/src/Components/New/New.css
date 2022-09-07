@@ -1,16 +1,35 @@
  form {
     font-family: Brush Script MT;
+    font-size: larger;
     color: rgb(133, 43, 133);
+    
 }
 
-button {
+.new-button {
     font-family: Brush Script MT;
     color: rgb(133, 43, 133);
     background-color: rgb(196, 121, 196);
-    width: 15%;
+    width: 25%;
 }
 
 .new-perfume {
     max-width: 300px;
     max-height: 300px;
+}
+
+.new-makeup-img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+section {
+    text-align: center;
+}
+
+.your-favorite-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    max-height: 500px;
 }

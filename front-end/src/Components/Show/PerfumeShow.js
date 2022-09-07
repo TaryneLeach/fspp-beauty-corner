@@ -56,11 +56,17 @@ const PerfumeShow = () => {
 			  <h4><img className="short-term" src="https://thumbs.dreamstime.com/b/short-term-rubber-stamp-grunge-design-dust-scratches-effects-can-be-easily-removed-clean-crisp-look-color-easily-83571228.jpg" alt=""/></h4>
 			)}
                 </div>
-                <Link to={`/perfumes/${perfume.id}/edit`}>Edit Item</Link>
+                <Link to="/perfumes"><button className="show-buttons">Back</button></Link>
+                &nbsp;  &nbsp;
+				<a href={perfume.where_to_purchase}><button className="show-buttons">Purchase</button></a>
+                &nbsp;  &nbsp;
+                <Link to={`/perfumes/${perfume.id}/edit`}><button className="show-buttons">Edit</button></Link>
+                &nbsp;  &nbsp;
+                <button className="show-buttons" onClick={deletePerfume}>Delete this Perfume</button>
                 <h5>Have you tried this perfume? Leave a review below!</h5>
                 <Reviews />
                 <br></br>
-                <button onClick={deletePerfume}>Delete this Perfume</button>
+              
 
             </article>
 

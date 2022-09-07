@@ -1,4 +1,4 @@
-import UserFavorites from "../Components/UserFavorites";
+import UserFavorites from "../Components/New/UserFavorites";
 import React from 'react'
 
 const UserFavoritesPage = () => {
