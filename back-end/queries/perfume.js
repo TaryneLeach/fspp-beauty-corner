@@ -16,13 +16,7 @@ const getOnePerfume = async (id) => {
 	}
 };
 
-const deletePerfume = async (id) => {
-	try {
-		return await db.one('DELETE FROM perfume WHERE id=$1 RETURNING *', id);
-	} catch (error) {
-		return error;
-	}
-};
+
 
 const createPerfume = async (perfume) => {
 	try {
@@ -36,17 +30,48 @@ const createPerfume = async (perfume) => {
 				perfume.key_notes,
                 perfume.price,
                 perfume.is_long_lasting,
-				perfume.where_to_purchase
+				perfume.where_to_purchase,
 			]
 		);
 	} catch (error) {
 		return error;
 	}
-};
+}
+	const upDatePerfume = async (id,perfume) => {
+	try {
+		return await db.one(
+			'UPDATE  perfume  SET (item_name = $1, brand = $2, price =$3, scent_notes = $4, fragrance_description =$5, key_notes = $6, long_lasting = $7, image = $8,where_to_purchase= $9), WHERE id=$10  RETURNING *',
+			[
+				perfume.item_name,
+				perfume.brand,
+				perfume.price,
+				perfume.scent_notes,
+				perfume.fragrance_description,
+				perfume.key_notes,
+				perfume.long_lasting,
+				perfume.image,
+				perfume.where_to_purchase,
+				id,
+			]
+		);
+	} catch (error) {
+		return error;
+	}
+
+	}
+
+	const deletePerfume = async (id) => {
+		try {
+			return await db.one('DELETE FROM perfume WHERE id=$1 RETURNING *', id);
+		} catch (error) {
+			return error;
+		}
+	};
 
 module.exports = {
 	getAllPerfume,
 	getOnePerfume,
-	deletePerfume,
 	createPerfume,
+	upDatePerfume,
+	deletePerfume,
 };

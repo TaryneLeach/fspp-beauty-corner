@@ -4,8 +4,9 @@ const perfumes = express.Router();
 const {
 	getAllPerfume,
 	getOnePerfume,
-	deletePerfume,
 	createPerfume,
+	upDatePerfume,
+	deletePerfume,
 } = require('../queries/perfume.js');
 
 // get all perfume
@@ -37,17 +38,7 @@ perfumes.get('/:id', async (req, res) => {
 	}
 });
 
-// delete perfume
 
-perfumes.delete('/:id', async (req, res) => {
-	const { id } = req.params;
-	const deleting = await deletePerfume(id);
-	if (deleting.id) {
-		res.status(200).json({ success: true, payload: deleting });
-	} else {
-		res.status(404).json({ success: false, payload: { id: undefined } });
-	}
-});
 
 // create a Perfume
 
@@ -66,6 +57,7 @@ perfumes.post('/new', async (req, res) => {
 				price: creating.price,
 				is_long_lasting: creating.is_long_lasting,
 				image: creating.image,
+				where_to_purchase: creating.where_to_purchase,
 			},
 		});
 	} else {
@@ -75,4 +67,44 @@ perfumes.post('/new', async (req, res) => {
 	res.status(500).json({ error: 'Perfume creation error' });
 });
 
+
+// update
+perfumes.put('/:id', async (req, res) => {
+	const { id } = req.params
+	const { body } = req.body;
+	const updating = await upDatePerfume(id, body);
+	if (updating.id) {
+		res.status(200).json({
+			success: true,
+			payload: {
+				
+				item_name: updating.item_name,
+				brand: updating.brand,
+				scent_type: updating.scent_type,
+				fragrance_description: updating.fragrance_description,
+				key_notes: updating.key_notes,
+				price: updating.price,
+				is_long_lasting: updating.is_long_lasting,
+				image: updating.image,
+				where_to_purchase: updating.where_to_purchase,
+				id: updating.id
+			},
+
+		});
+	} else {
+		res.status(500).json({ error: 'Perfume update error!' });
+	}
+});
+
+// delete perfume
+
+perfumes.delete('/:id', async (req, res) => {
+	const { id } = req.params;
+	const deleting = await deletePerfume(id);
+	if (deleting.id) {
+		res.status(200).json({ success: true, payload: deleting });
+	} else {
+		res.status(404).json({ success: false, payload: { id: undefined } });
+	}
+});
 module.exports = perfumes;
