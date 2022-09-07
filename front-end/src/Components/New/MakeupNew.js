@@ -17,7 +17,8 @@ const MakeupNew = () => {
 		price: 0,
 		is_vegan: false,
 		image: '',
-        where_to_purchase: ''
+        where_to_purchase: '',
+        
 	});
 
     const newMakeup = (event) => {
@@ -51,10 +52,10 @@ const MakeupNew = () => {
             <br></br>
             <br></br>
             <form  onSubmit={handleSubmit}>
-            <label htmlFor="name">Item Name</label>
+            <label htmlFor="item_name">Item Name</label>
             <br></br>
             <input 
-            id="name"
+            id="item_name"
             type="text"
             value={makeup.item_name}
             onChange={newMakeup}
@@ -91,8 +92,8 @@ const MakeupNew = () => {
             <br></br>
             <input 
             type="text"
-            name="image"
-            alt="makeup"
+            id="image"
+           
             value={makeup.image}
             onChange={newMakeup}
             />
@@ -102,9 +103,8 @@ const MakeupNew = () => {
             <br></br>
             <input 
             type="text"
-            name="purchase"
             value={makeup.where_to_purchase}
-            id="purchase"
+            id="where_to_purchase"
             onChange={newMakeup}
             />
             <br></br>
@@ -113,10 +113,9 @@ const MakeupNew = () => {
             <br></br>
 			<input
 			type='checkbox'
-			name='is-vegan'
             value={makeup.vegan}
 			onClick={checkBox}
-			id='is-vegan'
+			id='is_vegan'
           
             />
         

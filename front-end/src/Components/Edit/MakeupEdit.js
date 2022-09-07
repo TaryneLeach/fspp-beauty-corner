@@ -62,7 +62,7 @@ const MakeupEdit = () => {
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='name'>Item Name</label>
 				<input
-					id='name'
+					id='item_name'
 					type='text'
 					value={makeup.item_name}
 					onChange={editMakeup}
@@ -100,7 +100,7 @@ const MakeupEdit = () => {
               
 				<input
 					type='text'
-					name='image'
+					id="image"
                     alt="makeup"
 					value={makeup.image}
 					onChange={editMakeup}
@@ -110,9 +110,9 @@ const MakeupEdit = () => {
 				<label htmlFor='is_vegan'>Vegan</label>
 				<input
 					type='checkbox'
-					name='is-vegan'
+				
 					onClick={checkBox}
-					id='is-vegan'
+					id='is_vegan'
 				/>
 				<br></br>
 				<Link to='/makeups'>

@@ -1,6 +1,11 @@
 .perfume-show-img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.makeup-show-img {
+    max-width: 400px;
+    max-height: 400px;
 }
 .short-term {
     max-width: 105px;

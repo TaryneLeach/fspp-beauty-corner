@@ -42,7 +42,7 @@ const MakeupShow = () => {
              <h1>Additional Makeup Details</h1>
             <article>
                <br></br>
-                <img src={makeup.image} alt={makeup.item_name} />
+                <img className="makeup-show-img" src={makeup.image} alt={makeup.item_name} />
                 <div>{makeup.brand}</div>
                 <div>{makeup.category}</div>
                 <div>${makeup.price}</div>

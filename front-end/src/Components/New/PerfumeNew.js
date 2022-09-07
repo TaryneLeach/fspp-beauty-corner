@@ -58,7 +58,7 @@ const PerfumeNew = () => {
 				<label htmlFor='name'>Item Name</label>
 				<br></br>
 				<input
-					id='name'
+					id='item_name'
 					type='text'
 					value={perfume.item_name}
 					onChange={newPerfume}
@@ -73,28 +73,28 @@ const PerfumeNew = () => {
 					onChange={newPerfume}
 				/>
 				<br></br>
-				<label htmlFor='scent-notes'>Scent Notes</label>
+				<label htmlFor='scent_notes'>Scent Notes</label>
 				<br></br>
 				<input
-					id='scent-notes'
+					id='scent_notes'
 					type='text'
 					value={perfume.scent_notes}
 					onChange={newPerfume}
 				/>
 				<br></br>
-				<label htmlFor='fragrance-description'>Fragrance Description</label>
+				<label htmlFor='fragrance_description'>Fragrance Description</label>
 				<br></br>
 				<input
-					id='fragrance-description'
+					id='fragrance_description'
 					type='text'
 					value={perfume.fragrance_description}
 					onChange={newPerfume}
 				/>
 				<br></br>
-				<label htmlFor='key-notes'>Key Notes</label>
+				<label htmlFor='key_notes'>Key Notes</label>
 				<br></br>
 				<input
-					id='key-notes'
+					id='key_notes'
 					type='text'
 					value={perfume.key_notes}
 					onChange={newPerfume}
@@ -113,7 +113,7 @@ const PerfumeNew = () => {
 				<br></br>
 				<input
 					type='text'
-					name='image'
+					id='image'
 					value={perfume.image}
 					onChange={newPerfume}
 				/>
@@ -123,18 +123,18 @@ const PerfumeNew = () => {
 				<br></br>
 				<input
 					type='text'
-					name='purchase'
+					
 					value={perfume.where_to_purchase}
-					id='purchase'
+					id='where_to_purchase'
 					onChange={newPerfume}
 				/>
 				<label htmlFor='long-lasting'>Is this perfume long lasting?</label>
 				<br></br>
 				<input
 					type='checkbox'
-					name='long-lasting'
+					id='long_lasting'
 					onClick={checkBox}
-					id='long-lasting'
+				
 				/>
 				<br></br>
 				<Link to='/perfumes'>
