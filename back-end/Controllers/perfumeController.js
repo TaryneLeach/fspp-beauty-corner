@@ -1,5 +1,6 @@
 const express = require('express');
 const perfumes = express.Router();
+const db = require('../db/dbConfig.js');
 
 const {
 	getAllPerfume,
@@ -43,8 +44,8 @@ perfumes.get('/:id', async (req, res) => {
 // create a Perfume
 
 perfumes.post('/new', async (req, res) => {
-	const { body } = req.body;
-	const creating = await createPerfume(body);
+// console.log(req)
+	const creating = await createPerfume(req.body);
 	if (creating) {
 		res.status(200).json({
 			success: true,
@@ -61,18 +62,19 @@ perfumes.post('/new', async (req, res) => {
 			},
 		});
 	} else {
+		res.status(500).json({ error: 'Perfume creation creation failed!' });
 	}
-	res.status(500).json({ error: 'Perfume creation creation failed!' });
+	
 
-	res.status(500).json({ error: 'Perfume creation error' });
+	
 });
 
 
 // update
-perfumes.put('/:id', async (req, res) => {
+perfumes.put('/:id/edit', async (req, res) => {
 	const { id } = req.params
-	const { body } = req.body;
-	const updating = await upDatePerfume(id, body);
+
+	const updating = await upDatePerfume(id, req.body);
 	if (updating.id) {
 		res.status(200).json({
 			success: true,

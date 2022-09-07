@@ -40,6 +40,7 @@ const createMakeup = async (makeup) => {
 			]
 		);
 	} catch (error) {
+		console.log(error.message || error)
 		return error;
 	}
 
@@ -47,7 +48,7 @@ const createMakeup = async (makeup) => {
 	const upDateMakeup = async (id, makeup) => {
 	try {
 		return await db.one(
-			'UPDATE  makeup  SET (item_name = $1, brand = $2, category =$3, price =$4, is_vegan = $5, image =$6, where_to_purchase = $7 WHERE id=$8)  RETURNING *',
+			'UPDATE  makeup  SET item_name = $1, brand = $2, category = $3, price =$4, is_vegan = $5, image = $6, where_to_purchase = $7 WHERE id= $8  RETURNING *',
 			[
 				makeup.item_name,
 				makeup.brand,
@@ -61,6 +62,7 @@ const createMakeup = async (makeup) => {
 		);
 		
 	} catch (error) {
+		console.log(error.message || error)
 		return error;
 	}
 

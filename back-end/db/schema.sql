@@ -7,7 +7,7 @@ CREATE DATABASE beauty;
 DROP TABLE IF EXISTS makeup;
 CREATE TABLE makeup(
     id          SERIAL PRIMARY KEY,
-    item_name   TEXT NOT NULL,
+    item_name   TEXT ,
     brand       TEXT NOT NULL,
     category    TEXT NOT NULL,
     price       INT,

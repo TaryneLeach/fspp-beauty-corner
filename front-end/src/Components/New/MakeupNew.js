@@ -27,7 +27,7 @@ const MakeupNew = () => {
 
 	const handleNew = (makeup) => {
 		axios
-			.post(`${API}/makeups`, makeup)
+			.post(`${API}/makeups/new`, makeup)
 			.then(() => {
 				navigate(`/makeups`);
 			})

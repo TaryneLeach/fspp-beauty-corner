@@ -32,9 +32,10 @@ const PerfumeEdit = () => {
 			.catch();
 	}, [id]);
 
-	const handleEdit = (edit) => {
+	const handleEdit = (event) => {
+		event.preventDefault();
 		axios
-			.put(`${API}/perfumes/${id}`, edit)
+			.put(`${API}/perfumes/${id}/edit`, perfume)
 			.then(() => {
 				navigate(`/perfumes`);
 			})
@@ -79,11 +80,11 @@ const PerfumeEdit = () => {
 				/>
                 <br></br>
                 <br></br>
-				<label htmlFor='scent_notes'>Scent Notes</label>
+				<label htmlFor='scent_TYPE'>Scent Type</label>
 				<input
-					id='scent_notes'
+					id='scent_type'
 					type='text'
-					value={perfume.scent_notes}
+					value={perfume.scent_type}
 					onChange={editPerfume}
 				/>
                 <br></br>
@@ -128,7 +129,7 @@ const PerfumeEdit = () => {
                 <label htmlFor="long-lasting">Long Lasting</label>
                 <input type='checkbox' name='long_lasting' onClick={checkBox} id='long_lasting' />
                 <Link to="/perfumes">
-                    <button type="submit">Submit Perfume Edit</button>
+                    <button  className="show-buttons"type="submit">Submit Perfume Edit</button>
                 </Link>
 			</form>
 		</section>

@@ -1,5 +1,6 @@
 const express = require('express');
 const makeups = express.Router();
+const db = require('../db/dbConfig.js');
 
 const {
 	getAllMakeup,
@@ -40,30 +41,32 @@ makeups.get('/:id', async (req, res) => {
 
 
 // create a makeup item
-makeups.post('/new', async (red, res) => {
-	const { body } = req.body;
-	const creating = await createMakeup(body);
-	if (creating.id) {
+makeups.post('/new', async (req, res) => {
+
+	const creating = await createMakeup(req.body);
+
+	if (creating) {
 		res.status(200).json({
 			success: true,
 			payload: {
-				id: creating.id,
 				item_name: creating.item_name,
 				brand: creating.brand,
 				category: creating.category,
 				is_vegan: creating.is_vegan,
 				image: creating.image,
 				where_to_purchase: creating.where_to_purchase,
-			},
+
+			}
 		});
+		
 	} else {
 		res.status(500).json({ error: 'Makeup creation creation error!' });
 	}
 });
 // update
-makeups.put('/:id', async (req, res) => {
+makeups.put('/:id/edit', async (req, res) => {
 	const { id }  = req.params 
-	const { body } = req.body;
+	const { body } = req
 	const updating = await upDateMakeup(id,body);
 	if (updating.id) {
 		res.status(200).json({

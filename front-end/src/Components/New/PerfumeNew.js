@@ -26,7 +26,7 @@ const PerfumeNew = () => {
 
 	const handleNew = (perfume) => {
 		axios
-			.post(`${API}/perfumes`, perfume)
+			.post(`${API}/perfumes/new`, perfume)
 			.then(() => {
 				navigate(`/perfumes`);
 			})
@@ -73,12 +73,12 @@ const PerfumeNew = () => {
 					onChange={newPerfume}
 				/>
 				<br></br>
-				<label htmlFor='scent_notes'>Scent Notes</label>
+				<label htmlFor='scent_type'>Scent Type</label>
 				<br></br>
 				<input
-					id='scent_notes'
+					id='scent_type'
 					type='text'
-					value={perfume.scent_notes}
+					value={perfume.scent_type}
 					onChange={newPerfume}
 				/>
 				<br></br>

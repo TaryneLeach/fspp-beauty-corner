@@ -60,7 +60,7 @@ const UserFavorites = () => {
                     <input type='number' id='price' placeholder='Price' required />
                     <br></br>
                     <br></br>
-                    <button type='submit'>Submit your beauty faves!</button>
+                    <button className="show-buttons"type='submit'>Submit your beauty faves!</button>
                 </form>
             </section>
         );

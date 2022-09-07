@@ -31,9 +31,10 @@ const MakeupEdit = () => {
 			.catch();
 	}, [id]);
 
-	const handleEdit = (edit) => {
+	const handleEdit = (event) => {
+		event.preventDefault();
 		axios
-			.put(`${API}/makeups/${id}`, edit)
+			.put(`${API}/makeups/${id}/edit`, makeup )
 			.then(() => {
 				navigate(`/makeups`);
 			})
@@ -116,7 +117,7 @@ const MakeupEdit = () => {
 				/>
 				<br></br>
 				<Link to='/makeups'>
-					<button type='submit'>Submit Makeup Edit</button>
+					<button className="show-buttons" type='submit'>Submit Makeup Edit</button>
 				</Link>
 			</form>
 		</section>
