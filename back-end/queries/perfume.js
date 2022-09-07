@@ -36,6 +36,7 @@ const createPerfume = async (perfume) => {
 				perfume.key_notes,
                 perfume.price,
                 perfume.is_long_lasting,
+				perfume.where_to_purchase
 			]
 		);
 	} catch (error) {

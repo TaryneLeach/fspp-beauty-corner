@@ -35,6 +35,7 @@ const createMakeup = async (makeup) => {
 				makeup.price,
 				makeup.is_vegan,
 				makeup.image,
+				makeup.where_to_purchase
 			]
 		);
 	} catch (error) {
