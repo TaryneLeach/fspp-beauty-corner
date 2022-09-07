@@ -27,7 +27,7 @@ const deletePerfume = async (id) => {
 const createPerfume = async (perfume) => {
 	try {
 		return await db.one(
-			'INSERT INTO makeup (item_name, brand, scent_type, fragrance_description, key_notes, price, is_long_lasting, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *',
+			'INSERT INTO makeup (item_name, brand, scent_type, fragrance_description, key_notes, price, is_long_lasting, image, where_to_purchase) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *',
 			[
 				perfume.item_name,
 				perfume.brand,

@@ -27,7 +27,7 @@ const deleteMakeup = async (id) => {
 const createMakeup = async (makeup) => {
 	try {
 		return await db.one(
-			'INSERT INTO makeup (item_name, brand, category, price, is_vegan, image) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *',
+			'INSERT INTO makeup (item_name, brand, category, price, is_vegan, image, where_to_purchase) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *',
 			[
 				makeup.item_name,
 				makeup.brand,
