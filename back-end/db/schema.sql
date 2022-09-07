@@ -12,7 +12,8 @@ CREATE TABLE makeup(
     category    TEXT NOT NULL,
     price       INT,
     is_vegan    BOOLEAN,
-    image       TEXT
+    image       TEXT,
+    where_to_purchase TEXT NOT NULL
 );
 
 
@@ -26,5 +27,6 @@ CREATE TABLE perfume(
     fragrance_description TEXT NOT NULL,
     price       INT,
     is_long_lasting BOOLEAN,
-    image       TEXT
+    image       TEXT,
+    where_to_purchase TEXT NOT NULL
 );
