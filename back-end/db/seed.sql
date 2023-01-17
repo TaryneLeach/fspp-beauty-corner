@@ -1,9 +1,9 @@
 \c beauty
 
 INSERT INTO skincare (item_name, brand, product_type, price, is_clean_beauty, image, where_to_purchase) VALUES
- ("KP Bump Eraser", "First Aid Beauty", "Body Scrub", 30.00, true, "https://www.sephora.com/productimages/sku/s2233245-main-zoom.jpg?pb=2020-03-sephora-clean-2019", "https://www.sephora.com/product/kp-bump-eraser-body-scrub-with-10-aha-P444989?skuId=2233245&icid2=products%20grid:p444989:product")
- ()
- ()
+ ("KP Bump Eraser", "First Aid Beauty", "Body Scrub", 30.00, true, "https://www.sephora.com/productimages/sku/s2233245-main-zoom.jpg?pb=2020-03-sephora-clean-2019", "https://www.sephora.com/product/kp-bump-eraser-body-scrub-with-10-aha-P444989?skuId=2233245&icid2=products%20grid:p444989:product"),
+ ("Butta Drop", "Fenty Skin", "Body Moisturizer", 45.00, false, "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/ButtaDrop_200x.jpg?v=1649459839", "https://www.sephora.com/product/fenty-beauty-rihanna-butta-drop-whipped-oil-body-cream-P472162");
+--  ()
 
 INSERT INTO makeup (item_name, brand, category, price, is_vegan, image, where_to_purchase) VALUES
 

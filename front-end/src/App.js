@@ -10,8 +10,6 @@ import MakeupEdit from  './Pages/Edit/EditMakeup.js'
 import PerfumeEdit from './Pages/Edit/EditPerfume.js'
 import MakeupNew from './Pages/New/NewMakeup.js'
 import PerfumeNew from './Pages/New/NewPerfume.js'
-// import UserFavorites from './Pages/UserFavoritesPage.js'
-// import TableData from './Components/TableData.js'
 import PageNotFound from './Components/Modal.js'
 
 

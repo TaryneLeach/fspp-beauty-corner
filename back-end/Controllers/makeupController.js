@@ -41,7 +41,7 @@ makeups.get('/:id', async (req, res) => {
 
 
 // create a makeup item
-makeups.post('/new', async (req, res) => {
+makeups.post('/new', async (req,res) => {
 
 	const creating = await createMakeup(req.body);
 

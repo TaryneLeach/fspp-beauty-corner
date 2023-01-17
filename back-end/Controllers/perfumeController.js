@@ -62,7 +62,7 @@ perfumes.post('/new', async (req, res) => {
 			},
 		});
 	} else {
-		res.status(500).json({ error: 'Perfume creation creation failed!' });
+		res.status(500).json({ error: 'Perfume creation failed!' });
 	}
 	
 
