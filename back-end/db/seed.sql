@@ -1,5 +1,6 @@
 \c beauty
 
+INSERT INTO skincare (item_name, brand, category, price, is_vegan, image, where_to_purchase) VALUES
 
 INSERT INTO makeup (item_name, brand, category, price, is_vegan, image, where_to_purchase) VALUES
 

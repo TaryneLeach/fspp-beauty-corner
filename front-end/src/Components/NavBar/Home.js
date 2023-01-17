@@ -6,7 +6,7 @@ const Home = () => {
     
     return (
         <section>
-        <header> The Beauty Corner</header>
+        <header> The Beauty Corner!</header>
         <img  className="home-imgs"src="https://cdn.shopify.com/s/files/1/1461/5670/products/ecomm_mauvelous_1600x.jpg?v=1644002409" alt="" />
         <img  className="home-imgs"src="https://imgix.bustle.com/uploads/image/2022/2/8/549c2d9d-9b21-43df-a97e-0c5d5148fd52-273572059_458022142664242_8009926137397740592_n.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg" alt="" />
         <img  className="home-imgs"src="https://kremmania.hu/UploadedImages/162/beauty-bay-fiery-2-0-42-colour-palettes9-300-300.png" alt="" />

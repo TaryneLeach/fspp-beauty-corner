@@ -123,19 +123,13 @@ const PerfumeNew = () => {
 				<br></br>
 				<input
 					type='text'
-					
 					value={perfume.where_to_purchase}
 					id='where_to_purchase'
 					onChange={newPerfume}
 				/>
 				<label htmlFor='long-lasting'>Is this perfume long lasting?</label>
 				<br></br>
-				<input
-					type='checkbox'
-					id='long_lasting'
-					onClick={checkBox}
-				
-				/>
+				<input type='checkbox' id='long_lasting' onClick={checkBox} />
 				<br></br>
 				<br></br>
 				<Link to='/perfumes'>

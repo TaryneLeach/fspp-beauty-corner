@@ -31,10 +31,10 @@ const MakeupEdit = () => {
 			.catch();
 	}, [id]);
 
-	const handleEdit = (event) => {
-		event.preventDefault();
+	const handleEdit = (edit) => {
+	
 		axios
-			.put(`${API}/makeups/${id}/edit`, makeup )
+			.put(`${API}/makeups/${id}`, edit)
 			.then(() => {
 				navigate(`/makeups`);
 			})
