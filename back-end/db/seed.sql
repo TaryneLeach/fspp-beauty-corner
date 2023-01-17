@@ -1,6 +1,9 @@
 \c beauty
 
-INSERT INTO skincare (item_name, brand, category, price, is_vegan, image, where_to_purchase) VALUES
+INSERT INTO skincare (item_name, brand, product_type, price, is_clean_beauty, image, where_to_purchase) VALUES
+ ("KP Bump Eraser", "First Aid Beauty", "Body Scrub", 30.00, true, "https://www.sephora.com/productimages/sku/s2233245-main-zoom.jpg?pb=2020-03-sephora-clean-2019", "https://www.sephora.com/product/kp-bump-eraser-body-scrub-with-10-aha-P444989?skuId=2233245&icid2=products%20grid:p444989:product")
+ ()
+ ()
 
 INSERT INTO makeup (item_name, brand, category, price, is_vegan, image, where_to_purchase) VALUES
 

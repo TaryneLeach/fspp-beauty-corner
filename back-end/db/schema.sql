@@ -9,9 +9,9 @@ CREATE TABLE skincare(
     id          SERIAL PRIMARY KEY,
     item_name   TEXT ,
     brand       TEXT NOT NULL,
-    category    TEXT NOT NULL,
+    product_type    TEXT NOT NULL,
     price       INT,
-    is_vegan    BOOLEAN,
+    is_clean_beauty    BOOLEAN,
     image       TEXT,
     where_to_purchase TEXT NOT NULL
 
