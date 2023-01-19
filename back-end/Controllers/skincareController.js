@@ -61,4 +61,50 @@ skincare.post('/new', async (req, res) => {
 	}
 });
 
+// updating skincare
+
+skincare.put("/:id/edit", async (req, res) => {
+	const { id } = req.params
+
+	const updating = await upDateSkincare(id, req.body);
+	if (updating.id) {
+		res.status(200).json({
+			success: true, payload: {
+				item_name: updating.item_name,
+				brand: updating.brand,
+				product_type: updating.product_type,
+				price: updating.price,
+				is_clean_beauty: updating.is_clean_beauty,
+				image: updating.image,
+				where_to_purchase: updating.where_to_purchase,
+				id: updating.id
+
+			},
+		})
+	}  else {
+		res.status(500).json({ error: 'Skincare update error!' });
+	}
+});
+
+
+// deleting skincare
+
+skincare.delete('/:id', async (req, res) => {
+	const { id } = req.params;
+	const deleting = await deleteSkincare(id);
+	if (deleting.id) {
+		res.status(200).json({
+			success: true,
+			payload: deleting,
+		});
+	} else {
+		res.status(404).json({
+			success: false,
+			payload: {
+				id: undefined,
+			},
+		});
+	}
+});
+
 module.exports = skincare;
