@@ -3,6 +3,7 @@ const cors = require('cors');
 const express = require('express');
 const makeupController = require('./Controllers/makeupController.js')
 const perfumeController = require('./Controllers/perfumeController.js')
+const skincareController = require('./Controllers/skincareController.js')
 
 // CONFIGURATION
 const app = express();

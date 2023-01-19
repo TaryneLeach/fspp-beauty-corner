@@ -13,11 +13,10 @@ const NavBar = () => {
         &nbsp;
         <Link className="links"to='/perfumes'>Perfume</Link>
       &nbsp;
-      {/* <Link className="links" to="/userfavorites">Your Favorites</Link>
-      &nbsp; */}
-      <Link className="links"to="/makeups/new">New Makeup</Link>
+      <Link className="links"to="/skincare">Skincare</Link>
+      {/* <Link className="links"to="/makeups/new">New Makeup</Link>
       &nbsp;
-      <Link className="links"to="/perfumes/new">New Perfume</Link>
+      <Link className="links"to="/perfumes/new">New Perfume</Link> */}
         </nav>
     )
 }
