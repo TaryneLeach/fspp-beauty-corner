@@ -9,7 +9,7 @@ function SkincareCards({ skincare }) {
 <div className="main-div">
 
 
-    {/* <div className="img-div"><img className="makeup-list-img"src={makeup.image} alt="" /></div> */}
+  
     <br></br>
     <div className="name">{skincare.item_name}</div>
     <br></br>

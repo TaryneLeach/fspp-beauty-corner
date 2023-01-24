@@ -1,6 +1,23 @@
 p {
-    font-family: Brush Script MT;
+    font-family: Apple Chancery;
     color:  rgb(133, 43, 133);
     font-size: large;
+    text-align: center;
 }
+
+
+h1{
+    text-align: center;
+
+}
+.button-div {
+    text-align: center;
+}
+.modal-button {
+    text-align: center;
+    justify-content: center;
+    font-family: Apple Chancery;
+}
+
+
 

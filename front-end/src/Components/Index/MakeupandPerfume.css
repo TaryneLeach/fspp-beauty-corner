@@ -49,13 +49,13 @@
 }
 
 .link-div, .brand-div, .category-div {
-    font-family: Brush Script MT;
+    font-family: Apple Chancery;
     font-size: x-large;
     color: rgb(133, 43, 133);
 }
 
 .price-div, .scent-div {
-    font-family: Brush Script MT;
+    font-family: Apple Chancery;
     font-size: x-large;
     color: rgb(133, 43, 133);
 
@@ -66,7 +66,7 @@
 .card-button {
     background-color:rgb(196, 121, 196); 
     color: rgb(133, 43, 133);
-    font-family: Brush Script MT;
+    font-family: Apple Chancery;
     width: 45%;
     font-size: large;
 }
@@ -74,6 +74,6 @@
 
 .name {
     color: rgb(133, 43, 133);
-    font-family: Brush Script MT;
+    font-family: Apple Chancery;
     font-size: x-large; 
 }

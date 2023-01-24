@@ -21,11 +21,11 @@ function Modal({ setOpenModal }) {
         <div className="title">
           <h1>There is no beauty here!</h1>
         </div>
-        <div className="body">
+        <div>
           <p>Please try your search again!</p>
         </div>
-        <div className="footer">
-        <a href="/"> <button
+        <div className="button-div">
+        <a href="/"> <button className="modal-button"
             onClick={() => {
               setOpenModal(false);
             }}

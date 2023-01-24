@@ -15,7 +15,7 @@ CREATE TABLE skincare(
     image       TEXT,
     where_to_purchase TEXT NOT NULL
 
-)
+);
 
 DROP TABLE IF EXISTS makeup;
 CREATE TABLE makeup(
